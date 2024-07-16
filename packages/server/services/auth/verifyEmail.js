@@ -40,7 +40,7 @@ const verifyEmail = async (url, tokenPayload) => {
       siteTitle,
     });
 
-    const noReplyEmail = `noreply@${urlObject.host}`;
+    const noReplyEmail = `services@devfrontiers.io`;
 
     await mail.sendMail({
       from: noReplyEmail,
