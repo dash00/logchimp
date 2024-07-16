@@ -11,12 +11,12 @@ if (config.mail) {
     host: config.mail.host,
     port: config.mail.port,
     secure: true,
-    secureConnection: false,
-    tls: {
-       ciphers: "SSLv3",
-    },
-    ignoreTLS: process.env.NODE_ENV === "development",
-    requireTLS: true,
+    // secureConnection: false,
+    // tls: {
+    //    ciphers: "SSLv3",
+    // },
+    // ignoreTLS: process.env.NODE_ENV === "development",
+    // requireTLS: true,
     connectionTimeout: 10000,
     auth: {
       user: config.mail.user,
